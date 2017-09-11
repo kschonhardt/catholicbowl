@@ -27,6 +27,12 @@ header.masthead > .overlay {
     text-align: right;
 }
 
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
 @media (min-width: 992px) {
     header.masthead > .overlay {
         padding: 10rem 0;
