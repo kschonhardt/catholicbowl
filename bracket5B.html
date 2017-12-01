@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CatholicBowl.org</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/catholic-bowl.css" rel="stylesheet">
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/jquery.bracket.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/jquery.bracket.min.css" />
+
+    <script>
+
+        var boys5 = {
+            "teams": [
+                ["IC - JC", null], // First match
+                ["St. Peter White", "St. Francis"],
+                ["St. Peter White", null],
+                ["St Joe - JC", null],
+                ["St Francis", "St. Martins"],
+                ["St. Stan",  null],
+                ["St. George", null],
+                ["St. Thomas", null]
+
+
+            ],
+            "results": [            // List of brackets (single elimination, so only one bracket)
+                [                     // List of rounds in bracket
+                    [                   // First round in this bracket
+                        [null,null],
+                        [null,null],
+                        [null,null],
+                        [null,null],
+                        [null,null],
+                        [null,null],
+                        [null,null],
+                        [null,null]
+                    ],
+                    [                   // Second round in single elimination bracket
+                        [null,null],
+                        [null,null],
+                        [null,null],
+                        [null,null]
+
+                    ],
+                    [                   //third round
+                        [null,null],
+                        [null,null]
+                    ]
+                ]
+            ]
+        }
+
+        $(function() {
+            $('div#bracket .container').bracket({
+                init: boys5,
+                skipConsolationRound: true
+            })
+        })
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">2018 Catholic Bowl</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Coaches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:kurt@schonhardt.net">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <header>
+      <div class="coach-header" style="background-image: url('https://i.imgur.com/qHTa1E7.jpg')"></div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5">
+
+      <div id="bracket">
+        <span style="padding-left:50px;font-weight: bold"> 5th grade boys 2018 bracket:<br/><br/></span>
+        <div class="container" style="height: 400px"/>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; CatholicBowl.org and Immaculate Conception School, Jefferson City MO 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+
+  </body>
+
+</html>
